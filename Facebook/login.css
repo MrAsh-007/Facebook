@@ -8,6 +8,9 @@
     src: url(Fonts/Poppins-Regular.ttf);
 }
 
+/* Main Container  */
+
+
 .main-container {
     height: fit-content;
     width: 100%;
@@ -15,6 +18,10 @@
     flex-direction: column;
     background-color: #f2f4f7;
 }
+
+/* Boxes  */
+
+
 .boxes {
     height: 650px;
     width: 80%;
@@ -25,8 +32,12 @@
     align-self: center;
     font-family: arial;
 }
+
+/* Box 1 */
+
+
 .box1 {
-    height: 450px;
+    height: 80%;
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -48,6 +59,10 @@
     font-family: arial;
     color: #1c1e21;
 }
+
+/* Box 2 */
+
+
 .box2 {
     height: 320px;
     width: 380px;
@@ -81,7 +96,6 @@
     border: 1px solid rgb(8, 102, 255);
     box-shadow: 0 0 5px rgba(8, 102, 255, 0.5);
 }
-
 .loginbutton {
     height: 45px;
     width: 90%;
@@ -95,6 +109,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 .box2-container > .box2txt {
     height: 40px;
@@ -107,11 +122,14 @@
     text-align: center;
     border-bottom: 1px solid #dadde1;
 }
-.box2-container > .box2txt:hover {
+.box2-container > .box2txt > p {
+    height: fit-content;
+    width: fit-content;
     text-decoration: underline;
+    cursor: pointer;
 }
 .createbutton {
-    height: 45px;
+    height: 40px;
     width: 45%;
     background-color: #42b72a;
     color: white;
@@ -123,7 +141,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+
+
+/* Footer  */
+
+
 footer {
     height: 160px;
     width: 100%;
@@ -180,4 +206,23 @@ footer {
     font-weight: 600;
     font-size: 11px;
     padding-bottom: 10px;
+}
+
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 320px) {
+    
+    .text2 {
+        display: none;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+    .box2 {
+        margin-bottom: 50px;
+    }
 }
