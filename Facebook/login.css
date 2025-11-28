@@ -213,16 +213,103 @@ footer {
 /* Media Queries */
 
 
-@media only screen and (max-width: 320px) {
-    
-    .text2 {
+@media only screen and (max-width: 1030px) {
+    .main-container {
+        width: 100%;
+    }
+    .boxes {
+        height: 700px;
+        width: fit-content;
+    }
+    .box1 {
+        width: 500px;
+        margin-left: 100px;
+    }
+    .box2 {
+        width: fit-content;
+        margin-right: 100px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .main-container {
+        width: 100%;
+    }
+    .boxes {
+        height: 500px;
+        width: fit-content;
+    }
+    .box1 {
+        width:  fit-content;
+    }
+    .box1 .text2 {
         display: none;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .main-container {
+        width: 100%;
     }
     .boxes {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box1 {
+        height: fit-content;
+        width: fit-content;
+    }
+    .box1 p , .text1 {
+        width: fit-content;
+        margin-right: 50px;
     }
     .box2 {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .box2-container {
+        width: 350px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lang {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .main-container {
+        width: 100%;
+    }
+    .box2 {
+        margin-bottom: 50px;
+    }
+    .box2-container {
+        width: 300px;
+    }
+    .createbutton {
+        height: 45px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .main-container {
+        width: 100%;
+    }
+    .text1 p {
+        height: 50px;
+        width: 150px;
+        font-size: 40px;
+        margin-right: 90px;
+    }
+    .box2-container {
+        width: 250px;
         margin-bottom: 50px;
     }
 }

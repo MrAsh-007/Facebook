@@ -33,18 +33,17 @@
 
                 <!-- Name -->
                 <div class="inputs">
-                    <input type="text" class="name" placeholder="Enter Your First Name">
-                    <input type="text" class="name" placeholder="Enter Your Last Name">
+                    <input type="text" class="name" value="" id="firstName" placeholder="Enter Your First Name">
+                    <input type="text" class="name" value="" id="lastName" placeholder="Enter Your Last Name">
                 </div>
 
-                <!-- Date Of Birth -->
                 <div class="date-of-birth">
                     <p>Date of birth<i class="fa-solid fa-question"></i></p>
 
                     <div class="dob-select">
 
                         <!-- Day -->
-                        <select name="day" class="dob">
+                        <select name="day" value="" id="day" class="dob">
                             <option value="">Day</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -80,7 +79,7 @@
                         </select>
 
                         <!-- Month -->
-                        <select name="month" class="dob">
+                        <select name="month" value="" id="month" class="dob">
                             <option value="">Month</option>
                             <option value="01">January</option>
                             <option value="02">February</option>
@@ -97,7 +96,7 @@
                         </select>
 
                         <!-- Year -->
-                        <select name="year" class="dob">
+                        <select name="year" value="" id="year" class="dob">
                             <option value="">Year</option>
                             <option value="2025">2025</option>
                             <option value="2024">2024</option>
@@ -187,15 +186,15 @@
                     <div class="gender-container">
                         <div class="gender">
                             <p>Male</p>
-                            <input type="radio" name="gender" class="gen-inp">
+                            <input type="radio" name="gender" value="" id="male" class="gen-inp">
                         </div>
                         <div class="gender">
                             <p>Female</p>
-                            <input type="radio" name="gender" class="gen-inp">
+                            <input type="radio" name="gender" value="" id="female" class="gen-inp">
                         </div>
                         <div class="gender">
                             <p>Other</p>
-                            <input type="radio" name="gender" class="gen-inp">
+                            <input type="radio" name="gender" value="" id="other" class="gen-inp">
                         </div>
                     </div>
                 </div>
@@ -203,8 +202,8 @@
 
                 <!-- Mobile Number or Email Address -->
 
-                <input type="email" class="email" placeholder="Enter Your Mobile Number or Email Address">
-                <input type="password" class="password" placeholder="New Password">
+                <input type="email" class="email" value="" id="email" placeholder="Enter Your Mobile Number or Email Address">
+                <input type="password" class="password" value="" id="password" placeholder="New Password">
 
 
                 <p class="txt1">
@@ -219,7 +218,7 @@
                 <!-- Sign Up Button -->
 
                 <div class="signup">
-                    <a href="" class="signupbutton">Sign Up</a>
+                    <a href="#" class="signupbutton" onclick="signUpCredintials()">Sign Up</a>
                 </div>
                 
                 <div class="login-page">
@@ -290,6 +289,9 @@
         </div>
 
     </footer>
+
+
+    <script src="signup.js"></script>
 </body>
 
 </html>
