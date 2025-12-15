@@ -6,16 +6,26 @@ function logInCredintials(e) {
 
     e.preventDefault();
 
-    if (email.value.trim() == "" || password.value.trim() == "") {
+    if (email.value.trim() == "") {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong!",
+            text: "Please Enter an Email",
             footer: '<a href="#">Why do I have this issue?</a>'
         });
-    } else {
-        console.log(`Email ${email.value}`);
-        console.log(`Password ${password.value}`);
+        return;
+    } 
+    if (password.value.trim() == "") {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please Enter Correct Password",
+            footer: '<a href="#">Why do I have this issue?</a>'
+        });
+        return;
+    } 
+    else {
+        window.location.href = "http://127.0.0.1:5500/dashboard.html";
     }
 }
 
